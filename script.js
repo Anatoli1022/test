@@ -2,12 +2,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const modal = document.getElementById('myModal');
   const buttons = document.querySelectorAll('.apply-button');
   const closeBtn = document.querySelector('.close');
+  let loanIdValue;
 
   buttons.forEach((btn) => {
     btn.addEventListener('click', function () {
       const row = btn.closest('tr');
       const loanId = row.getAttribute('data-loan-id');
-      loanIdInput.value = loanId;
+      loanIdValue = loanId;
       modal.style.display = 'block';
     });
   });
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const formData = {
       fullName: fullName,
       contactInfo: contactInfo,
-      loanId: loanId,
+      loanId: loanIdValue,
     };
 
     fetch('http://localhost/test/apply.php', {
@@ -43,14 +44,14 @@ document.addEventListener('DOMContentLoaded', function () {
       })
       .then((data) => {
         console.log('Success:', data);
-        alert('Your application has been submitted successfully!');
+        alert('Ваша заявка была успешно подана!');
         modal.style.display = 'none';
         form.reset();
       })
       .catch((error) => {
         console.error('Error:', error);
         alert(
-          'There was an error submitting your application. Please try again.'
+          'Произошла ошибка при отправке вашей заявки. Пожалуйста, попробуйте снова.'
         );
       });
   });

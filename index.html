@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <title>Банковские кредиты</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Банковские кредиты</h1>
+      <title>Банковские кредиты</title>
       <table>
         <thead>
           <tr>
@@ -19,33 +19,83 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr data-loan-id="PersonalLoan">
             <td>Личный заем</td>
-            <td>8.5</td>
+            <td>5.0</td>
             <td>5</td>
             <td>
-              <button class="apply-btn">Подать заявку прямо сейчас</button>
+              <button class="apply-button">Подать заявку прямо сейчас</button>
             </td>
           </tr>
-          <!-- Add more rows for other loans -->
+          <tr data-loan-id="CarLoan">
+            <td>Автокредит</td>
+            <td>6.0</td>
+            <td>7</td>
+            <td>
+              <button class="apply-button">Подать заявку прямо сейчас</button>
+            </td>
+          </tr>
+          <tr data-loan-id="Mortgage">
+            <td>Ипотека</td>
+            <td>4.5</td>
+            <td>20</td>
+            <td>
+              <button class="apply-button">Подать заявку прямо сейчас</button>
+            </td>
+          </tr>
+          <tr data-loan-id="EducationLoan">
+            <td>Кредит на образование</td>
+            <td>7.0</td>
+            <td>10</td>
+            <td>
+              <button class="apply-button">Подать заявку прямо сейчас</button>
+            </td>
+          </tr>
+          <tr data-loan-id="BusinessLoan">
+            <td>Бизнес-кредит</td>
+            <td>8.0</td>
+            <td>10</td>
+            <td>
+              <button class="apply-button">Подать заявку прямо сейчас</button>
+            </td>
+          </tr>
         </tbody>
       </table>
-    </div>
 
-    <!-- Modal for application form -->
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <form id="applicationForm">
-          <label for="fullName">Full Name:</label>
-          <input type="text" id="fullName" name="fullName" required />
-          <label for="contactInfo">Contact Info:</label>
-          <input type="text" id="contactInfo" name="contactInfo" required />
-          <button type="submit">Submit</button>
-        </form>
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Заявка на кредит</h2>
+          <form id="applicationForm" class="form">
+            <div>
+              <label for="fullName">Полное имя:</label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                class="input-modal"
+                required
+                placeholder="Введите имя"
+              />
+            </div>
+
+            <div>
+              <label for="contactInfo">Номер телефона:</label>
+              <input
+                type="text"
+                id="contactInfo"
+                class="input-modal"
+                name="contactInfo"
+                required
+                placeholder="Введите номер телефона"
+              />
+            </div>
+            <button type="submit" class="button-submit">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
