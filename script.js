@@ -53,6 +53,9 @@ document.addEventListener('DOMContentLoaded', function () {
         alert(
           'Произошла ошибка при отправке вашей заявки. Пожалуйста, попробуйте снова.'
         );
+      })
+      .finally(() => {
+        console.log(formData);
       });
   });
 });
