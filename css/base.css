@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  color: #e8ecf3;
+  background: #20242d;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+  background: none;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+.no-scroll {
+  overflow: hidden;
+}

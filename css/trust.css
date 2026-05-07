@@ -1,0 +1,32 @@
+.trust {
+  padding: 18px 0;
+  background: #272d39;
+}
+.trust__list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.trust__list::-webkit-scrollbar {
+  display: none;
+}
+.trust__item {
+  display: grid;
+  place-items: center;
+  opacity: 0.7;
+}
+.trust__img {
+  max-height: 36px;
+  max-width: 86px;
+  filter: invert(1);
+}
+
+@media (min-width: 900px) {
+  .trust__list {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,29 @@
+.screenshots {
+  margin-top: 48px;
+
+}
+.screenshots__list {
+  margin-top: 20px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+.screenshots__img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid #232c44;
+  background: #161d2f;
+}
+
+@media (min-width: 640px) {
+  .screenshots__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .screenshots__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

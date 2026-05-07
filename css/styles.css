@@ -1,0 +1,18 @@
+/* Разбил на файлы для лучшей читаемости хоть данный вариант и грузится медленее  */
+@import url("base.css");
+@import url("common.css");
+@import url("header.css");
+@import url("hero.css");
+@import url("trust.css");
+@import url("offer.css");
+@import url("games.css");
+@import url("payments.css");
+@import url("vip.css");
+@import url("support.css");
+@import url("live.css");
+@import url("community.css");
+@import url("screenshots.css");
+@import url("faq.css");
+@import url("footer.css");
+@import url("info.css");
+@import url("support-fab.css");

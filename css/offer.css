@@ -1,0 +1,110 @@
+.offer {
+  padding: 36px 0;
+}
+.offer__card {
+  background: linear-gradient(135deg, #053da6, #1686fd);
+  border-radius: 18px;
+  padding: 22px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.offer__card::before {
+  content: "";
+  position: absolute;
+  inset: auto -40px -40px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.25) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+.offer__title {
+  color: #fff;
+  font-size: 24px;
+}
+.offer__desc {
+  margin-top: 10px;
+  color: #cfe2ff;
+}
+.offer__list {
+  margin-top: 14px;
+  padding-left: 20px;
+  color: #cfe2ff;
+  list-style: disc;
+}
+.offer__list-item + .offer__list-item {
+  margin-top: 4px;
+}
+.offer__cta {
+  margin-top: 6px;
+}
+
+.promo {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px dashed rgba(255, 255, 255, 0.4);
+  padding: 14px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+.promo__label {
+  font-weight: 700;
+  color: #fff;
+}
+.promo__row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.promo__code {
+  font-family: "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background: #062a6d;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+  min-width: 160px;
+}
+.promo__copy {
+  background: #062a6d;
+  color: #fff;
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.promo__copy_copied {
+  background: #0a2a4d;
+}
+
+@media (min-width: 900px) {
+  .offer__card {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    padding: 32px 36px;
+  }
+  .offer__body {
+    flex: 1.1;
+  }
+  .offer__promo {
+    flex: 1;
+    min-width: 0;
+  }
+}

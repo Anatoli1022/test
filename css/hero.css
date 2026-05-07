@@ -1,0 +1,128 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 64px 0 28px 0;
+}
+.hero__inner {
+  display: flex;
+  gap: 24px;
+  flex-direction: column-reverse;
+}
+.hero__watermark {
+  display: none;
+}
+.hero__title {
+  font-size: 30px;
+  color: #fff;
+}
+
+.hero__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+.hero__media {
+  align-self: center;
+  width: 100%;
+  max-width: 160px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.hero__img {
+  flex: 1 1 0;
+  width: 100%;
+  max-width: 240px;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 18px;
+}
+.hero__img:first-child {
+  border: 2px solid #1686fd;
+}
+
+.hero__img:last-child {
+  border: 2px solid #38b44c;
+}
+
+.hero__login {
+  margin-top: 16px;
+}
+.hero__login-label {
+  color: #7d869b;
+  font-size: 13px;
+  font-weight: 600;
+}
+.hero__list {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.hero__login-link {
+  display: block;
+  padding: 10px;
+  background: #272d39;
+  border-radius: 6px;
+}
+
+@media (min-width: 900px) {
+  .hero {
+    padding: 84px 0 56px;
+  }
+  .hero__inner {
+    flex-direction: column;
+  }
+
+  .hero__watermark {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    font-size: 400px;
+    right: -20%;
+    font-weight: 900;
+    letter-spacing: -0.1px;
+    line-height: 1;
+    opacity: 0.1;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+  }
+  .hero__watermark::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    z-index: 4;
+    height: 140px;
+    width: 100%;
+    bottom: 20px;
+    background: linear-gradient(
+      to top,
+      #272d39 0%,
+      #272d39 30%,
+      transparent 100%
+    );
+  }
+
+  .hero__title {
+    font-size: 42px;
+  }
+
+  .hero__login-label {
+    font-size: 16px;
+  }
+  .hero__media {
+    max-width: 496px;
+  }
+  .hero__inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero__text {
+    flex: 1;
+    max-width: 560px;
+  }
+}

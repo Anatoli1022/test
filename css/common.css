@@ -1,0 +1,82 @@
+/*переиспользуемые стили*/
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 11px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+  transition: 0.2s;
+}
+.btn:active {
+  transform: scale(0.97);
+}
+.btn_primary {
+  background: #1686fd;
+  color: #fff;
+  box-shadow: 0 6px 18px -6px rgba(4, 124, 252, 0.55);
+}
+.btn_green {
+  background: #38b44c;
+  color: #fff;
+  box-shadow: 0 6px 18px -6px rgba(56, 180, 76, 0.45);
+}
+.btn_primary:hover {
+  filter: brightness(1.1);
+}
+.btn_ghost {
+  background: transparent;
+  color: #e8ecf3;
+  border: 1px solid #cbcfd8;
+}
+.btn_ghost:hover {
+  background: #1a2236;
+}
+.btn_dark {
+  background: #0e1320;
+  color: #fff;
+  border: 1px solid #1d2436;
+}
+.btn_dark:hover {
+  background: #161d2f;
+}
+.btn_lg {
+  padding: 14px 26px;
+  font-size: 16px;
+}
+.btn_block {
+  display: flex;
+  width: 100%;
+}
+.btn__arrow {
+  display: inline-block;
+  transition: 0.2s;
+}
+.btn:hover .btn__arrow {
+  transform: translateX(3px);
+}
+
+.section-head__sub {
+  margin-top: 6px;
+  color: #9aa3b6;
+}
+.section-head_center {
+  text-align: center;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}

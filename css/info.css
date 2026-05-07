@@ -1,0 +1,29 @@
+.info {
+  padding: 10px 0;
+}
+.info__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info__list {
+  display: flex;
+  gap: 12px;
+}
+
+.info__item-link {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #aab3c5;
+  font-size: 10px;
+  transition: 0.2s;
+}
+.info__item-link:hover {
+  color: #ffff;
+}
+@media (min-width: 900px) {
+  .info__item-link {
+    font-size: 14px;
+  }
+}

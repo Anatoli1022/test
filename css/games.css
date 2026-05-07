@@ -1,0 +1,86 @@
+.games {
+  position: relative;
+  margin-top: 36px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 24px;
+  overflow: hidden;
+}
+
+.games__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.games__card {
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 18px;
+  position: relative;
+  overflow: hidden;
+}
+.games__title {
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.25;
+}
+.games__chips-list {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  column-gap: 28px;
+  row-gap: 16px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.games__list-item {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.games__item-text {
+  font-weight: 700;
+}
+.games__button {
+  display: block;
+  margin: 16px auto 0 auto;
+}
+
+@media (min-width: 640px) {
+  .games__title {
+    color: #fff;
+    font-size: 32px;
+    line-height: 1.25;
+  }
+  .games__chips-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 500px;
+  }
+  .games__card {
+    flex-direction: row;
+    align-items: center;
+    padding: 32px;
+  }
+  .games__body {
+    flex: 1;
+  }
+  .games__button {
+    margin: 20px 0 0 0;
+  }
+  .games__mascot {
+    width: 220px;
+  }
+}
