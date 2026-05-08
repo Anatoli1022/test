@@ -53,7 +53,7 @@
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 900px) {
   .support-fab {
     right: 24px;
     bottom: 24px;

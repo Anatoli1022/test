@@ -57,7 +57,7 @@
   margin: 16px auto 0 auto;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 900px) {
   .games__title {
     color: #fff;
     font-size: 32px;

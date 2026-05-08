@@ -30,7 +30,9 @@
 }
 
 .header__actions {
-  display: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .header__nav-link {
@@ -94,10 +96,8 @@
   gap: 18px;
 }
 
-.header__nav_open > .header__actions_modal {
-  display: flex;
-  gap: 44px;
-  margin-top: 50px;
+.header__actions_desktop {
+  display: none;
 }
 
 @media (min-width: 900px) {
@@ -109,10 +109,13 @@
     z-index: 2;
   }
 
-  .header__actions {
+  .header__actions_mobile {
+    display: none;
+  }
+
+  .header__actions_desktop {
     display: flex;
-    gap: 8px;
-    align-items: center;
+    margin-left: auto;
   }
   .header__actions_modal {
     display: none;
@@ -120,4 +123,5 @@
   .header__burger {
     display: none;
   }
+ 
 }

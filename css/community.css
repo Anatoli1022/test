@@ -25,7 +25,7 @@
   margin-top: 16px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 900px) {
   .community__avatars {
     max-width: 520px;
     grid-template-columns: repeat(6, 1fr);

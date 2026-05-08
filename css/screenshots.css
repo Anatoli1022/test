@@ -1,6 +1,5 @@
 .screenshots {
   margin-top: 48px;
-
 }
 .screenshots__list {
   margin-top: 20px;
@@ -17,7 +16,7 @@
   background: #161d2f;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 900px) {
   .screenshots__list {
     grid-template-columns: repeat(2, 1fr);
   }

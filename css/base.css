@@ -41,7 +41,7 @@ h3 {
   padding: 0 16px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 900px) {
   h1 {
     font-size: 35px;
   }
